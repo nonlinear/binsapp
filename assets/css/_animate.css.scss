@@ -1,0 +1,30 @@
+
+
+// =================================
+// ANIMATIONS
+// =================================
+
+@include animate(menupush) {
+		0%   { 
+		@include opacity(0); 
+		@include translate(-50); 
+	}
+}
+@include animate(progress) {
+	0%   {
+		background-size: 0% 100%;
+	}
+}
+@include animate(pushdown) {
+	0%   { 
+		@include opacity(0); 
+		@include translate(0, -12); 
+	}
+}
+@include animate(fadein) {
+		0%   { 
+		@include opacity(0); 
+		@include translate(-100, 0); 
+	}
+}
+

@@ -1,0 +1,260 @@
+// -----------------------------------------
+// BORDER BOX
+// -----------------------------------------
+%border-box {
+  box-sizing:         border-box;
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+}
+// @extend %border-box;
+// -----------------------------------------
+// RESET OBJECT
+// -----------------------------------------
+%reset {
+  margin:       0px !important;
+  padding:      0px !important;
+  border:       none;
+  background:   transparent;
+}
+// @extend %reset;
+// -----------------------------------------
+// ADD ELLIPSIS
+// -----------------------------------------
+%ellipsis {
+  overflow:       hidden;
+  text-overflow:  ellipsis;
+  white-space:    nowrap;
+}
+// @extend %ellipsis;
+// -----------------------------------------
+// HIDE TEXT
+// -----------------------------------------
+#hidetext {
+  font:        0/0 a;
+  text-shadow: none;
+  color:       transparent;
+}
+// @extend %hidetext;
+// -----------------------------------------
+// CLEARFIX
+// -----------------------------------------
+%clearfix {
+  zoom: 1;
+  &:before, 
+  &:after {
+    display:  table;
+    content:  "";
+  }
+  &:after {
+    clear:  both;
+  }
+}
+// @extend %clearfix;
+// -----------------------------------------
+// CENTER OBJECT
+// -----------------------------------------
+%centerblock {
+ display: block;
+ margin:  0 auto;
+}
+// @extend %centerblock;
+// -----------------------------------------
+// NAVIGATION LIST
+// -----------------------------------------
+%navlist {
+  list-style-type:  none;
+  padding:          0;
+  margin:           0;
+  overflow:         hidden;
+  > li{
+    display:        block;
+    float:          left;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+// @extend %navlist;
+
+
+
+// -----------------------------------------
+// SIZE AND SQUARE
+// -----------------------------------------
+@mixin size($width: 5px, $height: 5px) {
+  width:  $width;
+  height: $height;
+}
+@mixin square($size: 5px) {
+ @include size($size, $size);
+}
+// @include size(10px, 20px); makes object 10x20 pixels wide
+// @include square(10px);     makes object 10px square
+// -----------------------------------------
+// PLACEHOLDER
+// -----------------------------------------
+@mixin placeholder {
+  &.placeholder                { @content }
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder           { @content }
+  &::-moz-placeholder          { @content }
+  &:-ms-input-placeholder      { @content }
+  &:focus::-webkit-input-placeholder {
+    transition: all 0.5s 0.1s ease; 
+    text-indent: -50%;
+    opacity: 0;
+  }
+}
+// to be added in [placeholder] object only
+// @include placeholder { any rule here } adds animation
+// -----------------------------------------
+// BORDER RADIUS
+// -----------------------------------------
+@mixin radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius:    $radius;
+  border-radius:         $radius;
+}
+@mixin radius-custom($topleft: 5px, $topright: 5px, $bottomright: 5px, $bottomleft: 5px) {
+  -webkit-border-top-right-radius:    $topright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-left-radius:  $bottomleft;
+  -webkit-border-top-left-radius:     $topleft;
+  -moz-border-radius-topright:        $topright;
+  -moz-border-radius-bottomright:     $bottomright;
+  -moz-border-radius-bottomleft:      $bottomleft;
+  -moz-border-radius-topleft:         $topleft;
+  border-top-right-radius:            $topright;
+  border-bottom-right-radius:         $bottomright;
+  border-bottom-left-radius:          $bottomleft;
+  border-top-left-radius:             $topleft;
+  -moz-background-clip:               padding; 
+  -webkit-background-clip:            padding-box; 
+  background-clip:                    padding-box; 
+}
+// @include radius(10px);                          makes object 10px round
+// @include radius-custom(10px, 20px, 5px, 10px);  makes object round, custom
+// -----------------------------------------
+// SHADOW
+// -----------------------------------------
+@mixin shadow($shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow:  $shadow;
+  -moz-box-shadow:     $shadow;
+  box-shadow:          $shadow;
+}
+// @include shadow;
+// -----------------------------------------
+// OPACITY
+// -----------------------------------------
+@mixin opacity($opacity: 40) {
+  opacity:        $opacity / 100;
+  filter:         "alpha(opacity=#{$opacity})";
+  -khtml-opacity: $opacity / 100;
+  -moz-opacity:   $opacity / 100;
+}
+// @include opacity(10);
+// -----------------------------------------
+// TRANSITION
+// -----------------------------------------
+@mixin transition($prop: all, $time: 300ms, $ease: ease-out) {
+  -webkit-transition:  $prop $time $ease;
+  -moz-transition:     $prop $time $ease;
+  -ms-transition:      $prop $time $ease;
+  -o-transition:       $prop $time $ease;
+  transition:          $prop $time $ease;
+}
+// @include transition;
+// -----------------------------------------
+// TRANSFORMATION RULES
+// -----------------------------------------
+@mixin rotate($rotate: 0) {
+  -webkit-transform: rotate($rotate +deg);
+  -moz-transform:    rotate($rotate +deg);
+  -ms-transform:     rotate($rotate +deg);
+  -o-transform:      rotate($rotate +deg);
+  transform:         rotate($rotate +deg);
+}
+@mixin scale($scale: 1) {
+  -webkit-transform: scale($scale);
+  -moz-transform:    scale($scale);
+  -ms-transform:     scale($scale);
+  -o-transform:      scale($scale);
+  transform:         scale($scale);
+}
+@mixin skew($skew: 0) {
+  -webkit-transform: skew($skew +deg);
+  -moz-transform:    skew($skew +deg);
+  -ms-transform:     skew($skew +deg);
+  -o-transform:      skew($skew +deg);
+  transform:         skew($skew +deg);
+}
+@mixin translate($left: 0, $top: 0) {
+  -webkit-transform: translate($left +px, $top +px);
+  -moz-transform:    translate($left +px, $top +px);
+  -ms-transform:     translate($left +px, $top +px);
+  -o-transform:      translate($left +px, $top +px);
+  transform:         translate($left +px, $top +px);
+}
+// @include rotate(15);          rotates object 15 degrees
+// @include scale(1.5);          scales object 50% up
+// @include skew(12);            skews object 12 degrees
+// @include translate(10, -20);  moves object 10px left, -20px top
+
+
+
+
+// -----------------------------------------
+// ANIMATION RULES
+// -----------------------------------------
+@mixin animation($title: fadein) {
+  @keyframes $title          { @content }
+  @-moz-keyframes $title     { @content }
+  @-webkit-keyframes $title  { @content }
+  @-o-keyframes $title       { @content }
+}
+@mixin animate($title: fadein, $duration: 500ms) {
+ -webkit-animation: $title $duration;
+ -moz-animation:    $title $duration;
+ -o-animation:      $title $duration;
+ animation:         $title $duration;
+}
+@mixin delay($step: 1, $mode: backwards, $delay: 75ms) {
+  -webkit-animation-delay: ($delay * $step);
+  -moz-animation-delay: ($delay * $step);
+  -o-animation-delay: ($delay * $step);
+  animation-delay: ($delay * $step);
+  -webkit-animation-fill-mode: $mode;
+  -moz-animation-fill-mode: $mode;
+  -o-animation-fill-mode: $mode;
+  animation-fill-mode: $mode;
+}
+// create animation first: 
+// @include animation(animationtitle) { animation rules }
+// then assign animation to object:
+// @include animate(animationtitle, duration);
+// optionally, add delay (value is how much you multiply):
+// @include delay(2);
+
+
+
+// -----------------------------------------
+// RESPONSIVE RULES
+// -----------------------------------------
+$iphonewidth:     320px; 
+$iphoneheight:    480px;
+$iphone4inheight: 568px;
+$ipadwidth:       768px; 
+$ipadheight:      1024px;
+@mixin mq($point, $query1: min, $query2: width) {
+  @media screen and (#{$query1}-#{$query2}: $point) {
+    @content;
+  }
+}
+@mixin orient($orientation: landscape) {
+  @media (orientation : $orientation) {
+    @content;  
+  }
+}
+// for usage, check https://gist.github.com/nonlinear/6197448
+
+

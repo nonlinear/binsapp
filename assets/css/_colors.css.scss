@@ -1,0 +1,1209 @@
+/*
+COLOR NAME DEFINITIONS
+http://www.dbuggr.com/simon-tite/table-css-named-colors-sass-editable-languages/
+*/
+$AliceBlue:       #F0F8FF;
+$AntiqueWhite:      #FAEBD7;
+$Aqua:          #00FFFF;
+$Aquamarine:      #7fffd4;
+$Azure:         #f0ffff;
+$Beige:         #f5f5dc;
+$Bisque:        #ffe4c4;
+$Black:         #000000;
+$BlanchedAlmond:    #FFEBCD;
+$Blue:          #0000FF;
+$BlueViolet:      #8A2BE2;
+$Brown:         #A52A2A;
+$BurlyWood:       #DEB887;
+$CadetBlue:       #5F9EA0;
+$Chartreuse:      #7FFF00;
+$Chocolate:       #D2691E;
+$Coral:         #FF7F50;
+$CornflowerBlue:    #6495ED;
+$Cornsilk:        #FFF8DC;
+$Crimson:       #DC143C;
+$Cyan:          #00FFFF;
+$DarkBlue:        #00008B;
+$DarkCyan:        #008B8B;
+$DarkGoldenrod:     #B8860B;
+$DarkGray:        #A9A9A9;
+$DarkGrey:        #A9A9A9;
+$DarkGreen:       #006400;
+$DarkKhaki:       #BDB76B;
+$DarkMagenta:     #8B008B;
+$DarkOliveGreen:    #556B2F;
+$DarkOrange:      #FF8C00;
+$DarkOrchid:      #9932CC;
+$DarkRed:       #8B0000;
+$DarkSalmon:      #E9967A;
+$DarkSeaGreen:      #8FBC8F;
+$DarkSlateBlue:     #483D8B;
+$DarkSlateGray:     #2F4F4F;
+$DarkSlateGrey:     #2F4F4F;
+$DarkTurquoise:     #00CED1;
+$DarkViolet:      #9400D3;
+$DeepPink:        #FF1493;
+$DeepSkyBlue:     #00BFFF;
+$DimGray:       #696969;
+$DimGrey:       #696969;
+$DodgerBlue:      #1E90FF;
+$FireBrick:       #B22222;
+$FloralWhite:     #FFFAF0;
+$ForestGreen:     #228B22;
+$Fuchsia:       #FF00FF;
+$Gainsboro:       #DCDCDC;
+$GhostWhite:      #F8F8FF;
+$Gold:          #FFD700;
+$Goldenrod:       #DAA520;
+$Gray:          #808080;
+$Grey:          #808080;
+$Green:         #008000;
+$GreenYellow:     #ADFF2F;
+$Honeydew:        #F0FFF0;
+$HotPink:       #FF69B4;
+$IndianRed:       #CD5C5C;
+$Indigo:        #4B0082;
+$Ivory:         #FFFFF0;
+$Khaki:         #F0E68C;
+$Lavender:        #E6E6FA;
+$LavenderBlush:     #FFF0F5;
+$LawnGreen:       #7CFC00;
+$LemonChiffon:      #FFFACD;
+$LightBlue:       #ADD8E6;
+$LightCoral:      #F08080;
+$LightCyan:       #E0FFFF;
+$LightGoldenrodYellow:  #FAFAD2;
+$LightGreen:      #90EE90;
+$LightGray:       #D3D3D3;
+$LightGrey:       #D3D3D3;
+$LightPink:       #FFB6C1;
+$LightSalmon:     #FFA07A;
+$LightSeaGreen:     #20B2AA;
+$LightSkyBlue:      #87CEFA;
+$LightSlateGray:    #778899;
+$LightSlateGrey:    #778899;
+$LightSteelBlue:    #B0C4DE;
+$LightYellow:     #FFFFE0;
+$Lime:          #00FF00;
+$LimeGreen:       #32CD32;
+$Linen:         #FAF0E6;
+$Magenta:       #FF00FF;
+$Maroon:        #800000;
+$MediumAquamarine:    #66CDAA;
+$MediumBlue:      #0000CD;
+$MediumOrchid:      #BA55D3;
+$MediumPurple:      #9370DB;
+$MediumSeaGreen:    #3CB371;
+$MediumSlateBlue:   #7B68EE;
+$MediumSpringGreen:   #00FA9A;
+$MediumTurquoise:   #48D1CC;
+$MediumVioletRed:   #C71585;
+$MidnightBlue:      #191970;
+$MintCream:       #F5FFFA;
+$MistyRose:       #FFE4E1;
+$Moccasin:        #FFE4B5;
+$NavajoWhite:     #FFDEAD;
+$Navy:          #000080;
+$OldLace:       #FDF5E6;
+$Olive:         #808000;
+$OliveDrab:       #6B8E23;
+$Orange:        #FFA500;
+$OrangeRed:       #FF4500;
+$Orchid:        #DA70D6;
+$PaleGoldenrod:     #EEE8AA;
+$PaleGreen:       #98FB98;
+$PaleTurquoise:     #AFEEEE;
+$PaleVioletRed:     #DB7093;
+$PapayaWhip:      #FFEFD5;
+$PeachPuff:       #FFDAB9;
+$Peru:          #CD853F;
+$Pink:          #FFC0CB;
+$Plum:          #DDA0DD;
+$PowderBlue:      #B0E0E6;
+$Purple:        #800080;
+$Red:         #FF0000;
+$RosyBrown:       #BC8F8F;
+$RoyalBlue:       #4169E1;
+$SaddleBrown:     #8B4513;
+$Salmon:        #FA8072;
+$SandyBrown:      #F4A460;
+$SeaGreen:        #2E8B57;
+$Seashell:        #FFF5EE;
+$Sienna:        #A0522D;
+$Silver:        #C0C0C0;
+$SkyBlue:       #87CEEB;
+$SlateBlue:       #6A5ACD;
+$SlateGray:       #708090;
+$SlateGrey:       #708090;
+$Snow:          #FFFAFA;
+$SpringGreen:     #00FF7F;
+$SteelBlue:       #4682B4;
+$Tan:         #D2B48C;
+$Teal:          #008080;
+$Thistle:       #D8BFD8;
+$Tomato:        #FF6347;
+$Turquoise:       #40E0D0;
+$Violet:        #EE82EE;
+$Wheat:         #F5DEB3;
+$White:         #FFFFFF;
+$WhiteSmoke:      #F5F5F5;
+$Yellow:        #FFFF00;
+$YellowGreen:     #9ACD32;
+
+$base-color:  $Chocolate; // Set a base color
+$complement:  adjust-hue($base-color, 180);
+$split1:      adjust-hue($base-color, 158);
+$split2:      adjust-hue($base-color, -158);
+$triad1:      adjust-hue($base-color, 135);
+$triad2:      adjust-hue($base-color, -135);
+$tetra1:      adjust-hue($base-color, 90);
+$tetra2:      adjust-hue($base-color, -90);
+$analog1:     adjust-hue($base-color, 22);
+$analog2:     adjust-hue($base-color, -22);
+$dark1:       darken($base-color, 10%);
+$dark2:       darken($base-color, 20%);
+$dark3:       darken($base-color, 30%);
+$dark4:       darken($base-color, 40%);
+$light1:      lighten($base-color, 10%);
+$light2:      lighten($base-color, 20%);
+$light3:      lighten($base-color, 30%);
+$light4:      lighten($base-color, 40%);
+
+.colortest { 
+  background-color: $Salmon;
+  @extend %reset;
+  padding: 50px !important;
+  ul {
+    @extend %reset;
+    @extend %clearfix;
+    margin-top: 50px !important;
+    @include mq($iphoneheight) {
+      width: $iphoneheight;
+    }
+    @include mq($iphonewidth) {
+      width: $iphonewidth;
+    }
+    @include mq($ipadwidth) {
+      width: $ipadwidth;
+    }
+    @include mq($ipadheight) {
+     width: $ipadheight;
+   }
+   list-style-type: none;
+   li {
+    @include square(180px);
+
+    float: left;
+    @include transition;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    &:before {
+      padding: 3px 15px 5px 10px;
+      background-color: #fff;
+      @include shadow(5px 5px 5px rgba(0,0,0,.2));
+      font-weight: bold;
+      font-size: 18px;
+    }
+    &:hover {
+      @include rotate(7);
+      @include scale(1.3);
+      @include shadow(5px 5px 5px rgba(0,0,0,.2));
+    }
+    &:first-child {
+      background-color: $base-color;
+      &:before {
+        content: "$base-color";
+      }
+    }
+    &:nth-child(2) {
+      background-color: $complement;
+      &:before {
+        content: "$complement";
+      }
+    }
+    &:nth-child(3) {
+      background-color: $split1;
+      &:before {
+        content: "$split1";
+      }
+    }
+    &:nth-child(4) {
+      background-color: $split2;
+      &:before {
+        content: "$split2";
+      }
+    }
+    &:nth-child(5) {
+      background-color: $triad1;
+      &:before {
+        content: "$triad1";
+      }
+    }
+    &:nth-child(6) {
+      background-color: $triad2;
+      &:before {
+        content: "$triad2";
+      }
+    }
+    &:nth-child(7) {
+      background-color: $tetra1;
+      &:before {
+        content: "$tetra1";
+      }
+    }
+    &:nth-child(8) {
+      background-color: $tetra2;
+      &:before {
+        content: "$tetra2";
+      }
+    }
+    &:nth-child(9) {
+      background-color: $analog1;
+      &:before {
+        content: "$analog1";
+      }
+    }
+    &:nth-child(10) {
+      background-color: $analog2;
+      &:before {
+        content: "$analog2";
+      }
+    }
+    &:nth-child(11) {
+      background-color: $light1;
+      &:before {
+        content: "$light1";
+      }
+    }
+    &:nth-child(12) {
+      background-color: $light2;
+      &:before {
+        content: "$light2";
+      }
+    }
+    &:nth-child(13) {
+      background-color: $light3;
+      &:before {
+        content: "$light3";
+      }
+    }
+    &:nth-child(14) {
+      background-color: $light4;
+      &:before {
+        content: "$light4";
+      }
+    }
+
+    &:nth-child(15) {
+      background-color: $dark1;
+      &:before {
+        content: "$dark1";
+      }
+    }
+    &:nth-child(16) {
+      background-color: $dark2;
+      &:before {
+        content: "$dark2";
+      }
+    }
+    &:nth-child(17) {
+      background-color: $dark3;
+      &:before {
+        content: "$dark3";
+      }
+    }
+    &:nth-child(18) {
+      background-color: $dark4;
+      &:before {
+        content: "$dark4";
+      }
+    }
+  }
+  &.colorlist {
+    li {
+      &:nth-of-type(1) {
+        &:before {
+          content: "$AliceBlue";
+        }
+        background-color: $AliceBlue;
+      }
+      &:nth-of-type(2) {
+        &:before {
+          content: "$AntiqueWhite";
+        }
+        background-color: $AntiqueWhite;
+      }
+      &:nth-of-type(3) {
+        &:before {
+          content: "$Aqua";
+        }
+        background-color: $Aqua;
+      }
+      &:nth-of-type(4) {
+        &:before {
+          content: "$Aquamarine";
+        }
+        background-color: $Aquamarine;
+      }
+      &:nth-of-type(5) {
+        &:before {
+          content: "$Azure";
+        }
+        background-color: $Azure;
+      }
+      &:nth-of-type(6) {
+        &:before {
+          content: "$Beige";
+        }
+        background-color: $Beige;
+      }
+      &:nth-of-type(7) {
+        &:before {
+          content: "$Bisque";
+        }
+        background-color: $Bisque;
+      }
+      &:nth-of-type(8) {
+        &:before {
+          content: "$Black";
+        }
+        background-color: $Black;
+      }
+      &:nth-of-type(9) {
+        &:before {
+          content: "$BlanchedAlmond";
+        }
+        background-color: $BlanchedAlmond;
+      }
+      &:nth-of-type(10) {
+        &:before {
+          content: "$Blue";
+        }
+        background-color: $Blue;
+      }
+      &:nth-of-type(11) {
+        &:before {
+          content: "$BlueViolet";
+        }
+        background-color: $BlueViolet;
+      }
+      &:nth-of-type(12) {
+        &:before {
+          content: "$Brown";
+        }
+        background-color: $Brown;
+      }
+      &:nth-of-type(13) {
+        &:before {
+          content: "$BurlyWood";
+        }
+        background-color: $BurlyWood;
+      }
+      &:nth-of-type(14) {
+        &:before {
+          content: "$CadetBlue";
+        }
+        background-color: $CadetBlue;
+      }
+      &:nth-of-type(15) {
+        &:before {
+          content: "$Chartreuse";
+        }
+        background-color: $Chartreuse;
+      }
+      &:nth-of-type(16) {
+        &:before {
+          content: "$Chocolate";
+        }
+        background-color: $Chocolate;
+      }
+      &:nth-of-type(17) {
+        &:before {
+          content: "$Coral";
+        }
+        background-color: $Coral;
+      }
+      &:nth-of-type(18) {
+        &:before {
+          content: "$CornflowerBlue";
+        }
+        background-color: $CornflowerBlue;
+      }
+      &:nth-of-type(18) {
+        &:before {
+          content: "$Cornsilk";
+        }
+        background-color: $Cornsilk;
+      }
+      &:nth-of-type(19) {
+        &:before {
+          content: "$Crimson";
+        }
+        background-color: $Crimson;
+      }
+      &:nth-of-type(20) {
+        &:before {
+          content: "$Cyan";
+        }
+        background-color: $Cyan;
+      }
+      &:nth-of-type(21) {
+        &:before {
+          content: "$DarkBlue";
+        }
+        background-color: $DarkBlue;
+      }
+      &:nth-of-type(22) {
+        &:before {
+          content: "$DarkCyan";
+        }
+        background-color: $DarkCyan;
+      }
+      &:nth-of-type(23) {
+        &:before {
+          content: "$DarkGoldenrod";
+        }
+        background-color: $DarkGoldenrod;
+      }
+      &:nth-of-type(24) {
+        &:before {
+          content: "$DarkGray";
+        }
+        background-color: $DarkGray;
+      }
+      &:nth-of-type(25) {
+        &:before {
+          content: "$DarkGrey";
+        }
+        background-color: $DarkGrey;
+      }
+      &:nth-of-type(26) {
+        &:before {
+          content: "$DarkGreen";
+        }
+        background-color: $DarkGreen;
+      }
+      &:nth-of-type(27) {
+        &:before {
+          content: "$DarkKhaki";
+        }
+        background-color: $DarkKhaki;
+      }
+      &:nth-of-type(28) {
+        &:before {
+          content: "$DarkMagenta";
+        }
+        background-color: $DarkMagenta;
+      }
+      &:nth-of-type(29) {
+        &:before {
+          content: "$DarkOliveGreen";
+        }
+        background-color: $DarkOliveGreen;
+      }
+      &:nth-of-type(30) {
+        &:before {
+          content: "$DarkOrange";
+        }
+        background-color: $DarkOrange;
+      }
+      &:nth-of-type(31) {
+        &:before {
+          content: "$DarkOrchid";
+        }
+        background-color: $DarkOrchid;
+      }
+      &:nth-of-type(32) {
+        &:before {
+          content: "$DarkRed";
+        }
+        background-color: $DarkRed;
+      }
+      &:nth-of-type(33) {
+        &:before {
+          content: "$DarkSalmon";
+        }
+        background-color: $DarkSalmon;
+      }
+      &:nth-of-type(34) {
+        &:before {
+          content: "$DarkSeaGreen";
+        }
+        background-color: $DarkSeaGreen;
+      }
+      &:nth-of-type(35) {
+        &:before {
+          content: "$DarkSlateBlue";
+        }
+        background-color: $DarkSlateBlue;
+      }
+      &:nth-of-type(36) {
+        &:before {
+          content: "$DarkSlateGray";
+        }
+        background-color: $DarkSlateGray;
+      }
+      &:nth-of-type(37) {
+        &:before {
+          content: "$DarkSlateGrey";
+        }
+        background-color: $DarkSlateGrey;
+      }
+      &:nth-of-type(38) {
+        &:before {
+          content: "$DarkTurquoise";
+        }
+        background-color: $DarkTurquoise;
+      }
+      &:nth-of-type(39) {
+        &:before {
+          content: "$DarkViolet";
+        }
+        background-color: $DarkViolet;
+      }
+      &:nth-of-type(40) {
+        &:before {
+          content: "$DeepPink";
+        }
+        background-color: $DeepPink;
+      }
+      &:nth-of-type(41) {
+        &:before {
+          content: "$DeepSkyBlue";
+        }
+        background-color: $DeepSkyBlue;
+      }
+      &:nth-of-type(42) {
+        &:before {
+          content: "$DimGray";
+        }
+        background-color: $DimGray;
+      }
+      &:nth-of-type(43) {
+        &:before {
+          content: "$DimGrey";
+        }
+        background-color: $DimGrey;
+      }
+      &:nth-of-type(44) {
+        &:before {
+          content: "$DodgerBlue";
+        }
+        background-color: $DodgerBlue;
+      }
+      &:nth-of-type(45) {
+        &:before {
+          content: "$FireBrick";
+        }
+        background-color: $FireBrick;
+      }
+      &:nth-of-type(46) {
+        &:before {
+          content: "$FloralWhite";
+        }
+        background-color: $FloralWhite;
+      }
+      &:nth-of-type(47) {
+        &:before {
+          content: "$ForestGreen";
+        }
+        background-color: $ForestGreen;
+      }
+      &:nth-of-type(48) {
+        &:before {
+          content: "$Fuchsia";
+        }
+        background-color: $Fuchsia;
+      }
+      &:nth-of-type(49) {
+        &:before {
+          content: "$Gainsboro";
+        }
+        background-color: $Gainsboro;
+      }
+      &:nth-of-type(50) {
+        &:before {
+          content: "$GhostWhite";
+        }
+        background-color: $GhostWhite;
+      }
+      &:nth-of-type(51) {
+        &:before {
+          content: "$Gold";
+        }
+        background-color: $Gold;
+      }
+      &:nth-of-type(52) {
+        &:before {
+          content: "$Goldenrod";
+        }
+        background-color: $Goldenrod;
+      }
+      &:nth-of-type(53) {
+        &:before {
+          content: "$Gray";
+        }
+        background-color: $Gray;
+      }
+      &:nth-of-type(54) {
+        &:before {
+          content: "$Grey";
+        }
+        background-color: $Grey;
+      }
+      &:nth-of-type(55) {
+        &:before {
+          content: "$Green";
+        }
+        background-color: $Green;
+      }
+      &:nth-of-type(56) {
+        &:before {
+          content: "$GreenYellow";
+        }
+        background-color: $GreenYellow;
+      }
+      &:nth-of-type(57) {
+        &:before {
+          content: "$Honeydew";
+        }
+        background-color: $Honeydew;
+      }
+      &:nth-of-type(58) {
+        &:before {
+          content: "$HotPink";
+        }
+        background-color: $HotPink;
+      }
+      &:nth-of-type(59) {
+        &:before {
+          content: "$IndianRed";
+        }
+        background-color: $IndianRed;
+      }
+      &:nth-of-type(60) {
+        &:before {
+          content: "$Indigo";
+        }
+        background-color: $Indigo;
+      }
+      &:nth-of-type(61) {
+        &:before {
+          content: "$Ivory";
+        }
+        background-color: $Ivory;
+      }
+      &:nth-of-type(62) {
+        &:before {
+          content: "$Khaki";
+        }
+        background-color: $Khaki;
+      }
+      &:nth-of-type(63) {
+        &:before {
+          content: "$Lavender";
+        }
+        background-color: $Lavender;
+      }
+      &:nth-of-type(64) {
+        &:before {
+          content: "$LavenderBlush";
+        }
+        background-color: $LavenderBlush;
+      }
+      &:nth-of-type(65) {
+        &:before {
+          content: "$LawnGreen";
+        }
+        background-color: $LawnGreen;
+      }
+      &:nth-of-type(66) {
+        &:before {
+          content: "$LemonChiffon";
+        }
+        background-color: $LemonChiffon;
+      }
+      &:nth-of-type(67) {
+        &:before {
+          content: "$LightBlue";
+        }
+        background-color: $LightBlue;
+      }
+      &:nth-of-type(68) {
+        &:before {
+          content: "$LightCoral";
+        }
+        background-color: $LightCoral;
+      }
+      &:nth-of-type(69) {
+        &:before {
+          content: "$LightCyan";
+        }
+        background-color: $LightCyan;
+      }
+      &:nth-of-type(70) {
+        &:before {
+          content: "$LightGoldenrodYellow";
+        }
+        background-color: $LightGoldenrodYellow;
+      }
+      &:nth-of-type(71) {
+        &:before {
+          content: "$LightGreen";
+        }
+        background-color: $LightGreen;
+      }
+      &:nth-of-type(72) {
+        &:before {
+          content: "$LightGray";
+        }
+        background-color: $LightGray;
+      }
+      &:nth-of-type(73) {
+        &:before {
+          content: "$LightGrey";
+        }
+        background-color: $LightGrey;
+      }
+      &:nth-of-type(74) {
+        &:before {
+          content: "$LightPink";
+        }
+        background-color: $LightPink;
+      }
+      &:nth-of-type(75) {
+        &:before {
+          content: "$LightSalmon";
+        }
+        background-color: $LightSalmon;
+      }
+      &:nth-of-type(76) {
+        &:before {
+          content: "$LightSeaGreen";
+        }
+        background-color: $LightSeaGreen;
+      }
+      &:nth-of-type(77) {
+        &:before {
+          content: "$LightSkyBlue";
+        }
+        background-color: $LightSkyBlue;
+      }
+      &:nth-of-type(78) {
+        &:before {
+          content: "$LightSlateGray";
+        }
+        background-color: $LightSlateGray;
+      }
+      &:nth-of-type(79) {
+        &:before {
+          content: "$LightSlateGrey";
+        }
+        background-color: $LightSlateGrey;
+      }
+      &:nth-of-type(80) {
+        &:before {
+          content: "$LightSteelBlue";
+        }
+        background-color: $LightSteelBlue;
+      }
+      &:nth-of-type(81) {
+        &:before {
+          content: "$LightYellow";
+        }
+        background-color: $LightYellow;
+      }
+      &:nth-of-type(82) {
+        &:before {
+          content: "$Lime";
+        }
+        background-color: $Lime;
+      }
+      &:nth-of-type(83) {
+        &:before {
+          content: "$LimeGreen";
+        }
+        background-color: $LimeGreen;
+      }
+      &:nth-of-type(84) {
+        &:before {
+          content: "$Linen";
+        }
+        background-color: $Linen;
+      }
+      &:nth-of-type(85) {
+        &:before {
+          content: "$Magenta";
+        }
+        background-color: $Magenta;
+      }
+      &:nth-of-type(86) {
+        &:before {
+          content: "$Maroon";
+        }
+        background-color: $Maroon;
+      }
+      &:nth-of-type(87) {
+        &:before {
+          content: "$MediumAquamarine";
+        }
+        background-color: $MediumAquamarine;
+      }
+      &:nth-of-type(88) {
+        &:before {
+          content: "$MediumBlue";
+        }
+        background-color: $MediumBlue;
+      }
+      &:nth-of-type(89) {
+        &:before {
+          content: "$MediumOrchid";
+        }
+        background-color: $MediumOrchid;
+      }
+      &:nth-of-type(90) {
+        &:before {
+          content: "$MediumPurple";
+        }
+        background-color: $MediumPurple;
+      }
+      &:nth-of-type(91) {
+        &:before {
+          content: "$MediumSeaGreen";
+        }
+        background-color: $MediumSeaGreen;
+      }
+      &:nth-of-type(92) {
+        &:before {
+          content: "$MediumSlateBlue";
+        }
+        background-color: $MediumSlateBlue;
+      }
+      &:nth-of-type(93) {
+        &:before {
+          content: "$MediumSpringGreen";
+        }
+        background-color: $MediumSpringGreen;
+      }
+      &:nth-of-type(94) {
+        &:before {
+          content: "$MediumTurquoise";
+        }
+        background-color: $MediumTurquoise;
+      }
+      &:nth-of-type(95) {
+        &:before {
+          content: "$MediumVioletRed";
+        }
+        background-color: $MediumVioletRed;
+      }
+      &:nth-of-type(96) {
+        &:before {
+          content: "$MidnightBlue";
+        }
+        background-color: $MidnightBlue;
+      }
+      &:nth-of-type(97) {
+        &:before {
+          content: "$MintCream";
+        }
+        background-color: $MintCream;
+      }
+      &:nth-of-type(98) {
+        &:before {
+          content: "$MistyRose";
+        }
+        background-color: $MistyRose;
+      }
+      &:nth-of-type(99) {
+        &:before {
+          content: "$Moccasin";
+        }
+        background-color: $Moccasin;
+      }
+      &:nth-of-type(100) {
+        &:before {
+          content: "$NavajoWhite";
+        }
+        background-color: $NavajoWhite;
+      }
+      &:nth-of-type(101) {
+        &:before {
+          content: "$Navy";
+        }
+        background-color: $Navy;
+      }
+      &:nth-of-type(102) {
+        &:before {
+          content: "$OldLace";
+        }
+        background-color: $OldLace;
+      }
+      &:nth-of-type(103) {
+        &:before {
+          content: "$Olive";
+        }
+        background-color: $Olive;
+      }
+      &:nth-of-type(104) {
+        &:before {
+          content: "$OliveDrab";
+        }
+        background-color: $OliveDrab;
+      }
+      &:nth-of-type(105) {
+        &:before {
+          content: "$Orange";
+        }
+        background-color: $Orange;
+      }
+      &:nth-of-type(106) {
+        &:before {
+          content: "$OrangeRed";
+        }
+        background-color: $OrangeRed;
+      }
+      &:nth-of-type(107) {
+        &:before {
+          content: "$Orchid";
+        }
+        background-color: $Orchid;
+      }
+      &:nth-of-type(108) {
+        &:before {
+          content: "$PaleGoldenrod";
+        }
+        background-color: $PaleGoldenrod;
+      }
+      &:nth-of-type(109) {
+        &:before {
+          content: "$PaleGreen";
+        }
+        background-color: $PaleGreen;
+      }
+      &:nth-of-type(110) {
+        &:before {
+          content: "$PaleTurquoise";
+        }
+        background-color: $PaleTurquoise;
+      }
+      &:nth-of-type(111) {
+        &:before {
+          content: "$PaleVioletRed";
+        }
+        background-color: $PaleVioletRed;
+      }
+      &:nth-of-type(112) {
+        &:before {
+          content: "$PapayaWhip";
+        }
+        background-color: $PapayaWhip;
+      }
+      &:nth-of-type(113) {
+        &:before {
+          content: "$PeachPuff";
+        }
+        background-color: $PeachPuff;
+      }
+      &:nth-of-type(114) {
+        &:before {
+          content: "$Peru";
+        }
+        background-color: $Peru;
+      }
+      &:nth-of-type(115) {
+        &:before {
+          content: "$Pink";
+        }
+        background-color: $Pink;
+      }
+      &:nth-of-type(116) {
+        &:before {
+          content: "$Plum";
+        }
+        background-color: $Plum;
+      }
+      &:nth-of-type(117) {
+        &:before {
+          content: "$PowderBlue";
+        }
+        background-color: $PowderBlue;
+      }
+      &:nth-of-type(118) {
+        &:before {
+          content: "$Purple";
+        }
+        background-color: $Purple;
+      }
+      &:nth-of-type(119) {
+        &:before {
+          content: "$Red";
+        }
+        background-color: $Red;
+      }
+      &:nth-of-type(120) {
+        &:before {
+          content: "$RosyBrown";
+        }
+        background-color: $RosyBrown;
+      }
+      &:nth-of-type(121) {
+        &:before {
+          content: "$RoyalBlue";
+        }
+        background-color: $RoyalBlue;
+      }
+      &:nth-of-type(122) {
+        &:before {
+          content: "$SaddleBrown";
+        }
+        background-color: $SaddleBrown;
+      }
+      &:nth-of-type(123) {
+        &:before {
+          content: "$Salmon";
+        }
+        background-color: $Salmon;
+      }
+      &:nth-of-type(124) {
+        &:before {
+          content: "$SandyBrown";
+        }
+        background-color: $SandyBrown;
+      }
+      &:nth-of-type(125) {
+        &:before {
+          content: "$SeaGreen";
+        }
+        background-color: $SeaGreen;
+      }
+      &:nth-of-type(126) {
+        &:before {
+          content: "$Seashell";
+        }
+        background-color: $Seashell;
+      }
+      &:nth-of-type(127) {
+        &:before {
+          content: "$Sienna";
+        }
+        background-color: $Sienna;
+      }
+      &:nth-of-type(128) {
+        &:before {
+          content: "$Silver";
+        }
+        background-color: $Silver;
+      }
+      &:nth-of-type(129) {
+        &:before {
+          content: "$SkyBlue";
+        }
+        background-color: $SkyBlue;
+      }
+      &:nth-of-type(130) {
+        &:before {
+          content: "$SlateBlue";
+        }
+        background-color: $SlateBlue;
+      }
+      &:nth-of-type(131) {
+        &:before {
+          content: "$SlateGray";
+        }
+        background-color: $SlateGray;
+      }
+      &:nth-of-type(132) {
+        &:before {
+          content: "$SlateGrey";
+        }
+        background-color: $SlateGrey;
+      }
+      &:nth-of-type(133) {
+        &:before {
+          content: "$Snow";
+        }
+        background-color: $Snow;
+      }
+      &:nth-of-type(134) {
+        &:before {
+          content: "$SpringGreen";
+        }
+        background-color: $SpringGreen;
+      }
+      &:nth-of-type(135) {
+        &:before {
+          content: "$SteelBlue";
+        }
+        background-color: $SteelBlue;
+      }
+      &:nth-of-type(136) {
+        &:before {
+          content: "$Tan";
+        }
+        background-color: $Tan;
+      }
+      &:nth-of-type(137) {
+        &:before {
+          content: "$Teal";
+        }
+        background-color: $Teal;
+      }
+      &:nth-of-type(138) {
+        &:before {
+          content: "$Thistle";
+        }
+        background-color: $Thistle;
+      }
+      &:nth-of-type(139) {
+        &:before {
+          content: "$Tomato";
+        }
+        background-color: $Tomato;
+      }
+      &:nth-of-type(140) {
+        &:before {
+          content: "$Turquoise";
+        }
+        background-color: $Turquoise;
+      }
+      &:nth-of-type(141) {
+        &:before {
+          content: "$Violet";
+        }
+        background-color: $Violet;
+      }
+      &:nth-of-type(142) {
+        &:before {
+          content: "$Wheat";
+        }
+        background-color: $Wheat;
+      }
+      &:nth-of-type(143) {
+        &:before {
+          content: "$White";
+        }
+        background-color: $White;
+      }
+      &:nth-of-type(144) {
+        &:before {
+          content: "$WhiteSmoke";
+        }
+        background-color: $WhiteSmoke;
+      }
+      &:nth-of-type(145) {
+        &:before {
+          content: "$Yellow";
+        }
+        background-color: $Yellow;
+      }
+      &:nth-of-type(146) {
+        &:before {
+          content: "$YellowGreen";
+        }
+        background-color: $YellowGreen;
+      }
+    }
+  }
+}
+}

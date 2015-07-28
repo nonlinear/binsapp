@@ -1,0 +1,38 @@
+v1 to 2 changes
+latest cover, -1, -2
+- follow disappears
+- abandonment
+- no mags, redesign
+
+To think
+- should we have open mags and new arrivals?
+- embed
+- automatic follow/abandonment flow
+- find neighbors, compare
+
+Me
+- user info
+- add alert for older browsers
+- user delay
+- menu progress, more steps
+- menu progress, image
+- nav dropdown-menu, height limit (per device)
+- ribbon (where?)
+- annoying padding on tag
+- remove progress on bin menu li
+- backcover
+- readers copy
+- creators copy
+- check
+- #page-hook %tray
+
+Kfir
+- typeahead with links
+- shelves show and index, simplify
+- div.info, generalize
+- shelves, second last cover, third last cover
+- navigation
+- bin menu, magmenu, if/else not logged in, no mags
+- bins/show, get creator name
+- shelves become tags
+- singularize URL /tag/ /user/ etc.
