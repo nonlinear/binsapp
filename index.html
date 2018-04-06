@@ -4,12 +4,11 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-  <title>Colors</title>
+  <title>Bins</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="copyright" content="Nicholas Frota and Kfir Shay">
   <meta name="keywords" content="comics, webcomics, manga, quadrinhos">
   <meta name="description" content="">
-  <link href="assets/css/style.css" rel="stylesheet">
   <!--[if IE 6]><link href="assets/css/ie6.css" rel="stylesheet"><![endif]-->
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <!-- TODO: design icons -->
@@ -20,13 +19,37 @@
   <meta name="application-name" content="Project Name"/>
   <meta name="msapplication-TileColor" content="#cccccc"/>
   <meta name="msapplication-TileImage" content="assets/ico/ms-TileImage.png"/>
+  <style>
+  body {
+    font-family: helvetica;
+  }
+    .content {
+      width: 600px;
+      margin: 20px auto;
+    }
+  </style>
 </head>
 <body id="bin">
-  <div class="container">
-   <hr>
+  <div class="content">
     <h1>BinsApp Prototypes</h1>
-    <hr>
-    <div class="btn-group"><a class="btn" href="tag.html" target="_blank">Tag</a> <a class="btn" href="bin.html" target="_blank">Bin</a> <a class="btn" href="mag.html" target="_blank">Mag</a> <a class="btn" href="user.html" target="_blank">User</a></div>
+    Bins is divided in 4 main views:
+
+      <hr>
+      <h2><a href="tag.html" target="_blank">Tag</a></h2> or genres, is where readers browse titles and commit to it by following it.
+      <hr>
+
+<h2><a href="bin.html" target="_blank">Bin</a></h2> is the title per se. covers are king here, advertising its content.
+
+      <hr>
+
+        <h2><a href="mag.html" target="_blank">Mag</a></h2> is the granular object, where user read. It uses flexslider, a gallery that works perfect both on web and touchscreens. Here, experience is broken. Check <a href="https://dillonmag.com">Dillon Mag</a> (preferably on a tablet or phone, portrait mode) for a more complete experience.
+
+      <hr>
+
+         <h2><a href="user.html" target="_blank">User</a></h2> is the bottom up discovery space, where you can find new titles per taste. We need to rethink it for the privacy-minded generation... Maybe profile shows only titles that reader actively liked, not just read. This becomes so their trophy shelf, displaying the titles they enjoyed most.
+         <hr>
+         Check also PDF versions, <a href="bins.pdf">landscape</a> and <a href="bins_ipad.pdf">portrait</a> layouts.
+
 
   </div>
   <script src="assets/javascripts/jquery.js"></script>
